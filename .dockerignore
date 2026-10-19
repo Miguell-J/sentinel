@@ -1,0 +1,13 @@
+**/bin
+**/obj
+**/TestResults
+.git
+.github
+.env
+.env.*
+!.env.example
+.vs
+.idea
+artifacts
+coverage
+docs
