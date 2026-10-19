@@ -1,0 +1,17 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.key
+**/secrets/
+**/bin/
+**/obj/
+**/TestResults/
+.vs/
+.idea/
+.vscode/
+artifacts/
+coverage/
+.DS_Store
