@@ -4,7 +4,7 @@ COPY . .
 ARG APP_PROJECT=Sentinel.Api
 RUN dotnet publish "src/${APP_PROJECT}/${APP_PROJECT}.csproj" -c Release -o /publish --no-self-contained
 
-FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:11.0 AS runtime
 WORKDIR /app
 ARG APP_PROJECT=Sentinel.Api
 ENV APP_ENTRYPOINT="${APP_PROJECT}.dll"
